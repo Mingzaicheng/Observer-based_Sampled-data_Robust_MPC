@@ -155,8 +155,8 @@ for iii=0:0.05:T
     
     if flag>1 
 
-        line([(iii-0.05),iii],[hat_x01(flag-1),hat_x01(flag)],[hat_x02(flag-1),hat_x02(flag)],'Color','b','linestyle',':','linewidth',1.0)%蓝色虚线
-        line([(iii-0.05),iii],[x_01(flag-1),x_01(flag)],[x_02(flag-1),x_02(flag)],'Color','k','linewidth',1.0) %黑色实现
+        line([(iii-0.05),iii],[hat_x01(flag-1),hat_x01(flag)],[hat_x02(flag-1),hat_x02(flag)],'Color','b','linestyle',':','linewidth',1.0)
+        line([(iii-0.05),iii],[x_01(flag-1),x_01(flag)],[x_02(flag-1),x_02(flag)],'Color','k','linewidth',1.0) 
         hold on
 
     end
