@@ -216,17 +216,17 @@ for iii=0:0.05:T
 end
 
 figure (1)
-plot(0:0.005:(T+0.05), x_state_plot*[1;0],'b','LineWidth', 0.5); 
+plot(0:0.005:(T+0.05), x_state_plot*[1;0],'r','LineWidth', 0.5); 
 hold on
-plot(0:0.005:(T+0.05), hat_x0_plot*[1;0],'--b','LineWidth', 0.5); 
+plot(0:0.005:(T+0.05), hat_x0_plot*[1;0],'--r','LineWidth', 0.5); 
 xlim([0,T])
 xlabel({'$t~({\rm min})$'},'Interpreter','latex');
 ylabel({'$x_1,\hat x_{1}$'},'Interpreter','latex');
 legend({'Algorithm 1 for case (a),~$x_1$', 'Algorithm 1 for case (a),~$ \hat x_{1}$'}, 'Interpreter', 'latex');
 figure (11111)
-plot(0:0.005:(T+0.05),x_state_plot*[0;1],'b','LineWidth',0.5)
+plot(0:0.005:(T+0.05),x_state_plot*[0;1],'r','LineWidth',0.5)
 hold on
-plot(0:0.005:(T+0.05),hat_x0_plot*[0;1],'--b','LineWidth', 0.5)
+plot(0:0.005:(T+0.05),hat_x0_plot*[0;1],'--r','LineWidth', 0.5)
 hold on
 xlim([0,T])
 xlabel({'$t~({\rm min})$'},'Interpreter','latex');
@@ -234,9 +234,9 @@ ylabel({'$x_2,\hat x_{2}$'},'Interpreter','latex');
 legend({'Algorithm 1 for case (a),~$x_2$', 'Algorithm 1 for case (a),~$ \hat x_{2}$'}, 'Interpreter', 'latex');
 
 figure (111)
-plot(x_state_plot*[1;0],x_state_plot*[0;1],'b','LineWidth',1);
+plot(x_state_plot*[1;0],x_state_plot*[0;1],'r','LineWidth',1);
 hold on
-plot(hat_x0_plot*[1;0],hat_x0_plot*[0;1],'--b','LineWidth',1);
+plot(hat_x0_plot*[1;0],hat_x0_plot*[0;1],'--r','LineWidth',1);
 xlabel({'$x_1,\hat x_{1}$'},'Interpreter','latex');
 ylabel({'$x_2,\hat x_{2}$'},'Interpreter','latex');
 xlim([-0.025,0.4]);
@@ -245,7 +245,7 @@ legend({'Algorithm 1 for case (a),~$x$','Algorithm 1 for case (a),~$\hat x$'},'I
 
 figure (2)
 hold on
-stairs(0:0.05:T, U0,'--b','LineWidth', 1); 
+stairs(0:0.05:T, U0,'r','LineWidth', 1); 
 xlabel({'$t~({\rm min})$'},'Interpreter','latex');
 ylabel({'$u$'},'Interpreter','latex');
 ylim([-10,1]);

@@ -177,8 +177,6 @@ for i=1:4
 end
 
 
-
-%%%%%%%%
 for i=1:4
     
     LMI=newlmi;
@@ -333,7 +331,7 @@ for i=1:4
     lmiterm([LMI 11 11 0],-Tsam*Pe_k0);
     
 end
-%%%%%%%%
+
 LMI=newlmi;
 lmiterm([-LMI 1 1 0],1);
 lmiterm([-LMI 2 1 0],hat_x0);
@@ -347,5 +345,4 @@ lmiterm([-LMI 2 2 0],100);
 
 dbc2=getlmis;
 OP2=[0 100 1e9 10 1];
-%OP2=[0 500 1e36 500 1];
 [TMIN2,VXx2_f]=feasp(dbc2,OP2,0);

@@ -22,7 +22,7 @@ end
 
 dbc3=getlmis;
 
-OP3=[0 500 1e9 10 1];
+OP3=[0 100 1e9 10 1];
 
 [TMIN3,VXx3_f]=feasp(dbc3,OP3);
 

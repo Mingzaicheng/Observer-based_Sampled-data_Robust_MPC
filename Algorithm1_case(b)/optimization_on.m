@@ -176,8 +176,6 @@ for i=1:4
 end
 
 
-
-%%%%%%%%
 LMI=newlmi;
 lmiterm([-LMI 1 1 0],1);
 lmiterm([-LMI 2 1 0],hat_x0);
